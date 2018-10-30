@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Explorer : Le Bengy - Les recettes</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.0.0.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark"><a class="navbar-brand" href="#">Le Bengy - Les Recettes</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active"> <a class="nav-link" href="explorer.html">Explorer<span class="sr-only">(current)</span></a></li>
+          <li class="nav-item"> <a class="nav-link" href="#">Ajouter</a></li>
+          <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Editer </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Recettes</a> <a class="dropdown-item" href="#">Aliments</a> <a class="dropdown-item" href="#">Allergies</a> 
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Utilisateurs</a> 
+            </div>
+          </li>
+			<li class="nav-item"> <a class="nav-link" href="#">Deconnexion</a></li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Nom de recette" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Rechercher</button>
+        </form>
+      </div>
+    </nav>
+    <header> </header>
+<div class="container">
+  <div class="container-fluid">
+    <ul id="clothingnav1" class="nav nav-tabs" role="tablist">
+      <li class="nav-item"> <a class="nav-link active" href="#recette" id="recetteTab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">Recette</a> </li>
+      <li class="nav-item"> <a class="nav-link" href="#ingredient" role="tab" id="ingredientTab" data-toggle="tab" aria-controls="hats">Ingrédient</a> </li>
+      <li class="nav-item"> <a class="nav-link" href="#regime" role="tab" id="regimeTab" data-toggle="tab" aria-controls="hats">Régime alimentaire</a> </li>
+		<li class="nav-item"> <a class="nav-link" href="#utilisateur" role="tab" id="userTab" data-toggle="tab" aria-controls="hats">Utilisateurs</a> </li>
+    </ul>
+    <!-- Content Panel -->
+    <div id="clothingnavcontent1" class="tab-content">
+      <div role="tabpanel" class="tab-pane fade show active" id="recette" aria-labelledby="recetteTab">
+        <div class="jumbotron">
+          <div class="row text-center">
+            <div class="text-center col-12">
+              <h2>Je veux :</h2>
+            </div>
+            <div class="text-center col-12">
+				<div class="text-center col-12">
+					<button type="submit" id="feedbackSubmit" class="btn btn-success btn-lg"> Ajouter une recette</button>
+					<button type="submit" id="feedbackSubmit" class="btn btn-warning btn-lg"> Editer une recette</button>
+					<button type="submit" id="feedbackSubmit" class="btn btn-danger btn-lg"> Supprimer une recette</button>
+				</div>
+				
+            </div>
+          </div>
+        </div>
+      </div>
+      <div role="tabpanel" class="tab-pane fade" id="ingredient" aria-labelledby="ingredientTab">
+        <div class="jumbotron">
+          <div class="row text-center">
+            <div class="text-center col-12">
+              <h2>Je veux :</h2>
+            </div>
+            <div class="text-center col-12">
+				<div class="text-center col-12">
+					<button type="submit" id="feedbackSubmit" class="btn btn-success btn-lg"> Ajouter un ingrédient</button>
+					<button type="submit" id="feedbackSubmit" class="btn btn-warning btn-lg"> Editer un ingrédient</button>
+					<button type="submit" id="feedbackSubmit" class="btn btn-danger btn-lg"> Supprimer un ingrédient</button>
+				</div>
+				<div class="text-center col-12">
+				  <button type="submit" id="feedbackSubmit" class="btn btn-lg btn-light"> Lister les ingrédients</button>
+			  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+ 		<div role="tabpanel" class="tab-pane fade show active" id="regime" aria-labelledby="regimeTab">
+        <div class="jumbotron">
+          <div class="row text-center">
+            <div class="text-center col-12">
+              <h2>Je veux :</h2>
+            </div>
+            <div class="text-center col-12">
+				<div class="text-center col-12">
+					<button type="submit" id="feedbackSubmit" class="btn btn-success btn-lg"> Ajouter un  régime</button>
+					<button type="submit" id="feedbackSubmit" class="btn btn-warning btn-lg"> Editer un régime</button>
+					<button type="submit" id="feedbackSubmit" class="btn btn-danger btn-lg"> Supprimer un régime</button>
+				</div>
+				<div class="text-center col-12">
+				  <button type="submit" id="feedbackSubmit" class="btn btn-lg btn-light"> Lister les régimes</button>
+			  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+	<div role="tabpanel" class="tab-pane fade show active" id="utilisateur" aria-labelledby="userTab">
+        <div class="jumbotron">
+          <div class="row text-center">
+            <div class="text-center col-12">
+              <h2>Je veux :</h2>
+            </div>
+            <div class="text-center col-12">
+				<div class="text-center col-12">
+					<button type="submit" id="feedbackSubmit" class="btn btn-success btn-lg"> Ajouter un utilisateur</button>
+					<button type="submit" id="feedbackSubmit" class="btn btn-warning btn-lg"> Editer un utilisateur</button>
+					<button type="submit" id="feedbackSubmit" class="btn btn-danger btn-lg"> Supprimer un utilisateureur</button>
+				</div>
+				<div class="text-center col-12">
+				  <button type="submit" id="feedbackSubmit" class="btn btn-lg btn-light"> Lister les utilisateurs</button>
+			  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+	  </div>
+  <div class="row">
+        <div class="col-12 col-md-8 mx-auto"> </div>
+      </div>
+    </div>
+    <footer class="text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <p>Copyright © Le Bengy. Tout droit réservé.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+    <script src="js/jquery-3.2.1.min.js"></script> 
+    <!-- Include all compiled plugins (below), or include individual files as needed --> 
+    <script src="js/popper.min.js"></script> 
+    <script src="js/bootstrap-4.0.0.js"></script>
+  </body>
+</html>
